@@ -1,0 +1,57 @@
+<!-- Describe task in general -->
+
+<p style="text-align: justify;">
+    给您一个三角形顶点坐标列表（一个由 3 个 2 整数组成的元组列表），一个多边形被分割成多个三角形。
+这些三角形至少有一条边与另一个三角形共享（另一个三角形也共享两个顶点）。
+您必须以整数形式返回原始多边形的边数。
+</p>
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}number_of_sides_examples.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">
+assert number_of_sides([((1, 1), (1, 3), (3, 3)), ((1, 1), (3, 1), (3, 3))]) == 4
+assert number_of_sides([((1, 1), (2, 1), (2, 3)), ((2, 1), (2, 3), (3, 1))]) == 3
+assert number_of_sides([((1, 1), (2, 3), (3, 1)), ((2, 3), (3, 1), (4, 3)),
+                        ((2, 3), (3, 5), (4, 3)), ((3, 1), (4, 3), (5, 1))]) == 3
+</pre>
+
+<p style="text-align: justify;">
+    <strong>注意：</strong>
+<ul>
+    <li>该多边形没有孔。</li>
+</ul>
+</p>
+
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三角形坐标列表（由 3 个元组组成的列表，其中 3 个元组为 2 个整数） <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>边数（一个整数） <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>先决条件</strong>
+    <ul>
+    <li>x &gt;= 0, y &gt;= 0</li>
+    </ul>
+</p>
